@@ -7,10 +7,33 @@
     <title>test git</title>
 </head>
 <body>
+    <h1>Program GIT Camp404</h1>
+    <p>klik daftar untuk meningkatkan skillmu!</p>
+    <button onclick="cekProgram()">Cek Program</button>
 
-    <h1>hello wordl</h1>
-    <h1>hello wordl</h1>
-    <h1>hello wordl</h1>
+    <div id="program" style="visibility: hidden;">
+        <table>
+            <tr>
+                <td>Program</td>
+                <td>Waktu</td>
+                <td>Daftar Program</td>
+            </tr>
+            <tr>
+                <td>GIT Personal Project</td>
+                <td>20 Desember 2021</td>
+                <td><button>Daftar</button></td>
+            </tr>
+        </table>
+    </div>
+
+    <script>
+        function cekProgram(){
+            let program = document.getElementById('program');
+            program.style.visibility = "visible";
+            program.style.backgroundColor = "blue";
+
+        }
+    </script>
     
 </body>
 </html>
